@@ -1,23 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Header from "./component/Header";
+import Carousel from "./component/Carousel";
+import ListCardTitle from "./component/ListCardTitle";
+import Footer from "./component/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <Carousel />
+      <div className="container">
+        <div className="row">
+          <div className="col-sm-8">
+            <h1>What We Do</h1>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum
+              laborum consequuntur iste odit doloribus fugiat, qui repellendus
+              tenetur unde ex ad laudantium quibusdam. Atque, voluptatem
+              doloribus eaque consequatur praesentium blanditiis?
+            </p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum
+              laborum consequuntur iste odit doloribus fugiat, qui repellendus
+              tenetur unde ex ad laudantium quibusdam. Atque, voluptatem
+              doloribus eaque consequatur praesentium blanditiis?
+            </p>
+          </div>
+          <div className="col-sm-4">
+            <h1>Contact US</h1>
+            <p>CyberSoft</p>
+            <p>Su Van Hanh, quận 10, Tp.HCM</p>
+            <p>website: cybersoft.edu.vn</p>
+          </div>
+        </div>
+        <ListCardTitle />
+      </div>
+      <Footer />
     </div>
   );
 }
